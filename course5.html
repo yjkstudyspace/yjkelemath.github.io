@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应用数学 - 我的学习空间站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 和首页一致的科幻背景 */
+        body {
+            font-family: "微软雅黑", "PingFang SC", sans-serif;
+            min-height: 100vh;
+            color: #e0f7ff;
+            line-height: 1.8;
+            padding: 40px 20px;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(0, 240, 255, 0.15), transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(120, 0, 255, 0.15), transparent 50%),
+                linear-gradient(135deg, #0a0e27 0%, #121a3a 50%, #0d142e 100%);
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 返回首页按钮 */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            color: #00f0ff;
+            text-decoration: none;
+            border: 1px solid rgba(0, 240, 255, 0.5);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(0, 240, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #00f0ff;
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            margin: 35px 0 18px;
+            color: #a0e7ff;
+            font-size: 22px;
+            border-left: 4px solid #00f0ff;
+            padding-left: 12px;
+        }
+
+        /* 资源列表 */
+        .resource-list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        .resource-item {
+            background: rgba(20, 30, 60, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 10px;
+            padding: 16px 22px;
+            transition: all 0.3s;
+        }
+
+        .resource-item:hover {
+            border-color: #00f0ff;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+            transform: translateX(5px);
+        }
+
+        .resource-item a {
+            color: #c0e8ff;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .resource-item a:hover {
+            color: #00f0ff;
+        }
+
+        .footer {
+            text-align: center;
+            color: #5a7a9a;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 返回首页按钮 -->
+        <a href="index.html" class="back-btn">← 返回首页</a>
+
+        <h1>📘 应用数学</h1>
+
+        <!-- PDF 讲义区 -->
+        <h2>📄 课程讲义（点击打开 PDF）</h2>
+        <ul class="resource-list">
+            <li class="resource-item">
+                <a href="gaoyi/math-lecture-1.pdf" target="_blank">经典控制理论.pdf</a>
+            </li>
+            <li class="resource-item">
+                <a href="gaoyi/math-lecture-2.pdf" target="_blank">现代控制理论.pdf</a>
+            </li>
+            <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">非线性系统.pdf</a>
+            </li>
+                        <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">非线性控制方法.pdf</a>
+            </li>
+                                           <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">复杂网络系统.pdf</a>
+            </li>
+                        <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">传染病数学.pdf</a>
+            </li>
+              <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">数值分析.pdf</a>
+            </li>
+              <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">矩阵计算.pdf</a>
+            </li>
+              <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">最优化理论.pdf</a>
+            </li>
+                         <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">运筹学.pdf</a>
+            </li>
+                                           <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">图论及其应用.pdf</a>
+            </li>
+                       <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">机器学习数学基础.pdf</a>
+            </li>
+                                 <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">深度学习数学基础.pdf</a>
+            </li>
+                                 <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">强化学习数学基础.pdf</a>
+            </li>
+                                 <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">基于流形理论的人工智能数学基础.pdf</a>
+            </li>
+                                        <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">人工智能实践.pdf</a>
+            </li>
+                                                     <li class="resource-item">
+                <a href="gaoyi/math-lecture-3.pdf" target="_blank">应用随机过程.pdf</a>
+            </li>
+
+        </ul>
+
+
+        <div class="footer">
+            © 2026 我的学习空间站
+        </div>
+    </div>
+</body>
+</html>
